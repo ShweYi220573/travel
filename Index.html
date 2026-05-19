@@ -424,66 +424,79 @@
     </section>
 
     <!-- Footer -->
-    <footer class="max-w-7xl mx-auto px-5 py-10">
+    <footer class="max-w-7xl mx-auto px-5 py-20">
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10">
+        <!-- Logo -->
         <div>
           <h1 class="text-4xl font-bold text-blue-950">Jadoo.</h1>
-          <p class="text-gray-500 mt-5 text-sm leading-6">
-            Book your trip in minute, get full Control for much longer.
+
+          <p class="text-gray-500 mt-5 leading-7 text-sm">
+            Book your trip in minute, get full control for much longer.
           </p>
         </div>
 
+        <!-- Company -->
         <div>
-          <h3 class="font-bold text-lg mb-5">Company</h3>
+          <h2 class="font-bold text-lg mb-5">Company</h2>
+
           <ul class="space-y-3 text-gray-500">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">Mobile</a></li>
+            <li>About</li>
+            <li>Careers</li>
+            <li>Mobile</li>
           </ul>
         </div>
 
+        <!-- Contact -->
         <div>
-          <h3 class="font-bold text-lg mb-5">Contact</h3>
+          <h2 class="font-bold text-lg mb-5">Contact</h2>
+
           <ul class="space-y-3 text-gray-500">
-            <li><a href="#">Help/FAQ</a></li>
-            <li><a href="#">Press</a></li>
-            <li><a href="#">Affiliates</a></li>
+            <li>Help / FAQ</li>
+            <li>Press</li>
+            <li>Affiliates</li>
           </ul>
         </div>
 
+        <!-- More -->
         <div>
-          <h3 class="font-bold text-lg mb-5">More</h3>
+          <h2 class="font-bold text-lg mb-5">More</h2>
+
           <ul class="space-y-3 text-gray-500">
-            <li><a href="#">Airlinefees</a></li>
-            <li><a href="#">Airline</a></li>
-            <li><a href="#">Low fare tips</a></li>
+            <li>Airline Fees</li>
+            <li>Airline</li>
+            <li>Low Fare Tips</li>
           </ul>
         </div>
 
+        <!-- Social -->
         <div>
           <div class="flex gap-4">
             <div
-              class="w-10 h-10 rounded-full bg-gray-100 flex justify-center items-center"
+              class="w-10 h-10 rounded-full bg-gray-200 flex justify-center items-center"
             >
-              f
+              💕
             </div>
+
             <div
               class="w-10 h-10 rounded-full bg-pink-200 flex justify-center items-center"
             >
-              i
+              📷
             </div>
+
             <div
-              class="w-10 h-10 rounded-full bg-gray-100 flex justify-center items-center"
+              class="w-10 h-10 rounded-full bg-blue-200 flex justify-center items-center"
             >
-              t
+              🤦‍♀️
             </div>
           </div>
 
           <p class="text-gray-500 mt-5">Discover our app</p>
+
           <div class="flex gap-3 mt-5">
             <button class="bg-black text-white px-4 py-2 rounded-lg text-sm">
               Google Play
             </button>
+
             <button class="bg-black text-white px-4 py-2 rounded-lg text-sm">
               App Store
             </button>
@@ -491,25 +504,10 @@
         </div>
       </div>
 
+      <!-- Bottom Text -->
       <p class="text-center text-gray-400 text-sm mt-16">
         All rights reserved @jadoo.co
       </p>
     </footer>
-
-    <script>
-      const navToggle = document.getElementById("navToggle");
-      const navMenu = document.getElementById("navMenu");
-      const navIcon = document.getElementById("navIcon");
-
-      navToggle.addEventListener("click", () => {
-        const isHidden = navMenu.classList.toggle("hidden");
-        navIcon.textContent = isHidden ? "☰" : "✕";
-        navIcon.classList.toggle("text-red-500", !isHidden);
-        navToggle.setAttribute(
-          "aria-label",
-          isHidden ? "Open navigation menu" : "Close navigation menu",
-        );
-      });
-    </script>
   </body>
 </html>
